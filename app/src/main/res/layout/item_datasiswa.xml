@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:clickable="true"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivPhotoSiswa"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="7dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/asep" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNamaSiswa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="Nama Siswa"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvSiswaKelas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:ems="15"
+                android:fontFamily="monospace"
+                android:maxLines="1"
+                android:text="XI Angkatan 2017/2018"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvSiswaJurusan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:ems="15"
+                android:fontFamily="monospace"
+                android:maxLines="1"
+                android:text="Rekayasa Perangkat Lunak"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvTglTambahSiswa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:ems="15"
+                android:fontFamily="monospace"
+                android:maxLines="1"
+                android:paddingTop="4dp"
+                android:text="●  Tanggal Tambah 2018/10/09"
+                android:textColor="#d3d6d4"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
+
+
